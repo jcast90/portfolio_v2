@@ -1,15 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    
-    <link rel="stylesheet" href="css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="js/app.js" type="text/javascript"></script>
-    
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-toggle").dropdown();
+        });
+    </script>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <!--header with logo and nav-->
+        <div class="row">
+            <div class="col-md-6">
+                <figure> <img class="responsive" href="#" alt="logo" style="width:200px;height:200px"> </figure>
+            </div>
+            <div class="col-md-6">
+                <nav class="navbar-text navbar-right">
+                    <ul class="nav">
+                        <li class="dropdown"> <a id="dLabel" data-target="dropdown-menu" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li><a href="">Feed Reader Tester</a></li>
+                                <li><a href="">Neighborhood Map</a></li>
+                                <li><a href="">Arcade Game Clone</a></li>
+                                <li><a href="">Website Optimization</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end header-->
+        <!-- welcome message -->
+        <div class="jumbotron text-center"> <span>Hi this is my welcome messsage to my page, I really should put something productive and cool in here.</span> </div>
+        <!--end message -->
+        <!--div for text box-->
+        <div class="row">
+            <div class="col-md-12 content">
+                <h2>My work over the past year.</h2> </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">RSS Feed Reader Tester</h2></a>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2 class="text-center">Case Study</h2> <span><em>link to website</em></span> </div>
+                                    <div class="col-md-6">
+                                        <article>
+                                            <h3>Problem:</h3>
+                                            <p>Before an application is developed, it is important to run tests to make sure that the application’s functions are working properly. The goal was to run specific tests for an RSS Feed Reader application that uses Google's RSS API and have them all pass. Another part of this challenge included picking up the tests where another developer had left off, thus having to decipher their code before proceeding the tests.</p>
+                                            <h3>Solution:</h3>
+                                            <p> First, learn the Jasmine testing framework. Then, read and decipher the previous developer’s code and testing framework. After running a numerous series of tests, the application began to function as predicted, and a feature was even added to test for the URL’s inclusions of http: or https: in order to increase functionality. </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Neighrborhood Map</h2></a>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Case Study</h2> </div>
+                                    <div class="col-md-6">
+                                        <article>
+                                            <h3>Problem:</h3>
+                                            <p>The goal of this project was to create a single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map should be made to reflect your very own neighborhood. </p>
+                                            <h3>Solution:</h3>
+                                            <p> Using JavaScript, I was able to have a functioning map with hard-coded locations and a search option. After Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Yelp API. This neighborhood map includes descriptions, ratings, and address information for the local businesses around my house in La Jolla. </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-center">Arcade Game Clone</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Case Study</h2> </div>
+                        <div class="col-md-6">
+                            <article>
+                                <h3>Problem:</h3>
+                                <p>After being given half of the HTML5 code for a partially developed game, I needed to create the rest of the game using Object Oriented JavaScript. Having only half of the code meant reading someone else’s code and modifying it to match my JavaScript. Not only that, but I had to add enemies, and have them collide with the player. </p>
+                                <h3>Solution</h3>
+                                <p> The best solution was to start building the map, then the enemies and their functions and finally the main character and his functions. After going through different processes for how an enemy can affect the player, I ultimately went with a for loop and a math.random(). This allowed for a random number of enemies between a certain number to be generated. Ultimately, I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. </p>
+                            </article>
+                        </div>
+                    </div>
+                    <h2 class="text-center">Website Optimization</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Case Study</h2> </div>
+                        <div class="col-md-6">
+                            <article>
+                                <h3>Problem:</h3>
+                                <p>In this project, we were given a website that was slow, and had choppy animation and had a very high load time. The problem, was going into someone else code, understanding what they were doing, then take it apart and work with it so the page would load at an optimal speed and not have choppy frames in their animation. </p>
+                                <h3>Solution:</h3>
+                                <p> In order to increase the sites load time, the ‘googlefont’ was loaded into the HTML page with javascript, the css was moved to the end of the HTML document. The next step to solving the 60fps for the animation was to go through the javascript. First, I pulled out a function that was creating a new pizza with every for loop. Instead, it was created once, and another function was used to run through the container size and generate pizzas. Next, I limited the amount of pizzas that were being generated within the container. Finally, I went to the variable containing the pizza sizes and optimized them to be only the size that needed to be loaded. Ultimately, I optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

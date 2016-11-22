@@ -1,4 +1,18 @@
-*{
-    margin:0;
-    padding:0;
+body{
+    position:relative;
+}
+.nav li{
+    display: inline;
+    float: left;
+    text-decoration-color: black;
+}
+
+.jumbotron{
+
+  background-color:#fff !important;
+
+}
+.content{
+    background-color:#f4e6e6;
+    text-align: center;
 }
