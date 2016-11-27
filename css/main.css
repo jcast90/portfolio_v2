@@ -1,18 +1,43 @@
-body{
-    position:relative;
+body {
+    position: relative;
 }
-.nav li{
+
+.hidden {
+    display: none;
+}
+
+.nav li {
     display: inline;
     float: left;
     text-decoration-color: black;
 }
 
-.jumbotron{
-
-  background-color:#fff !important;
-
+.jumbotron {
+    background-color: #fff !important;
+    height: 80vh;
 }
-.content{
-    background-color:#f4e6e6;
+
+.jumbotron span {
+    position: relative;
+    top: 30%;
+}
+
+.header_h2 {
+    background-color: #f4e6e6;
     text-align: center;
+    height: 20vh;
+}
+
+.header_h2 h2 {
+    position: relative;
+    top: 7vh;
+    text-align: center;
+}
+
+.panel {
+    background-color: aqua !important;
+}
+
+.panel-heading {
+    height: 10vh;
 }

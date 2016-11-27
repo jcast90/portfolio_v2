@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -28,7 +29,7 @@
                     <ul class="nav">
                         <li class="dropdown"> <a id="dLabel" data-target="dropdown-menu" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects <span class="caret"></span></a>
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="">Feed Reader Tester</a></li>
+                                <li><a href="#collapse1">Feed Reader Tester</a></li>
                                 <li><a href="">Neighborhood Map</a></li>
                                 <li><a href="">Arcade Game Clone</a></li>
                                 <li><a href="">Website Optimization</a></li>
@@ -42,11 +43,11 @@
         </div>
         <!-- end header-->
         <!-- welcome message -->
-        <div class="jumbotron text-center"> <span>Hi this is my welcome messsage to my page, I really should put something productive and cool in here.</span> </div>
+        <div class="jumbotron text-center"> <span class="hidden">Hi this is my welcome messsage to my page, I really should put something productive and cool in here.</span> </div>
         <!--end message -->
         <!--div for text box-->
         <div class="row">
-            <div class="col-md-12 content">
+            <div class="col-md-12 header_h2">
                 <h2>My work over the past year.</h2> </div>
         </div>
         <div class="row">
@@ -94,34 +95,61 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="text-center">Arcade Game Clone</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Case Study</h2> </div>
-                        <div class="col-md-6">
-                            <article>
-                                <h3>Problem:</h3>
-                                <p>After being given half of the HTML5 code for a partially developed game, I needed to create the rest of the game using Object Oriented JavaScript. Having only half of the code meant reading someone else’s code and modifying it to match my JavaScript. Not only that, but I had to add enemies, and have them collide with the player. </p>
-                                <h3>Solution</h3>
-                                <p> The best solution was to start building the map, then the enemies and their functions and finally the main character and his functions. After going through different processes for how an enemy can affect the player, I ultimately went with a for loop and a math.random(). This allowed for a random number of enemies between a certain number to be generated. Ultimately, I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. </p>
-                            </article>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Arcade Game Clone</h2></a>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Case Study</h2> </div>
+                                    <div class="col-md-6">
+                                        <article>
+                                            <h3>Problem:</h3>
+                                            <p>After being given half of the HTML5 code for a partially developed game, I needed to create the rest of the game using Object Oriented JavaScript. Having only half of the code meant reading someone else’s code and modifying it to match my JavaScript. Not only that, but I had to add enemies, and have them collide with the player. </p>
+                                            <h3>Solution</h3>
+                                            <p> The best solution was to start building the map, then the enemies and their functions and finally the main character and his functions. After going through different processes for how an enemy can affect the player, I ultimately went with a for loop and a math.random(). This allowed for a random number of enemies between a certain number to be generated. Ultimately, I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <h2 class="text-center">Website Optimization</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Case Study</h2> </div>
-                        <div class="col-md-6">
-                            <article>
-                                <h3>Problem:</h3>
-                                <p>In this project, we were given a website that was slow, and had choppy animation and had a very high load time. The problem, was going into someone else code, understanding what they were doing, then take it apart and work with it so the page would load at an optimal speed and not have choppy frames in their animation. </p>
-                                <h3>Solution:</h3>
-                                <p> In order to increase the sites load time, the ‘googlefont’ was loaded into the HTML page with javascript, the css was moved to the end of the HTML document. The next step to solving the 60fps for the animation was to go through the javascript. First, I pulled out a function that was creating a new pizza with every for loop. Instead, it was created once, and another function was used to run through the container size and generate pizzas. Next, I limited the amount of pizzas that were being generated within the container. Finally, I went to the variable containing the pizza sizes and optimized them to be only the size that needed to be loaded. Ultimately, I optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. </p>
-                            </article>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Website Optimization</h2></a>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Case Study</h2> </div>
+                                    <div class="col-md-6">
+                                        <article>
+                                            <h3>Problem:</h3>
+                                            <p>In this project, we were given a website that was slow, and had choppy animation and had a very high load time. The problem, was going into someone else code, understanding what they were doing, then take it apart and work with it so the page would load at an optimal speed and not have choppy frames in their animation. </p>
+                                            <h3>Solution:</h3>
+                                            <p> In order to increase the sites load time, the ‘googlefont’ was loaded into the HTML page with javascript, the css was moved to the end of the HTML document. The next step to solving the 60fps for the animation was to go through the javascript. First, I pulled out a function that was creating a new pizza with every for loop. Instead, it was created once, and another function was used to run through the container size and generate pizzas. Next, I limited the amount of pizzas that were being generated within the container. Finally, I went to the variable containing the pizza sizes and optimized them to be only the size that needed to be loaded. Ultimately, I optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>About Me</h2>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt, repellat assumenda reprehenderit in sequi illo exercitationem reiciendis maxime voluptatum temporibus odit. Excepturi mollitia, itaque natus iusto nobis minus amet!</div>
+                <div>Officiis magnam alias nesciunt et beatae odit, aut nobis quia. Ullam magni ratione nisi placeat necessitatibus, illum ea quisquam doloremque inventore voluptate praesentium, eum porro. Laudantium, sint, iste. Voluptatibus, placeat.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Contact Me</h2> </div>
         </div>
     </div>
 </body>
