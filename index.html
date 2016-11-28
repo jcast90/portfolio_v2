@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-
     <!--<script src="jquery-ui.min.js"></script>-->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -24,69 +23,56 @@
     <div class="container-fluid">
         <!--header with logo and nav-->
         <div class="row">
-            <div class="col-md-6">
-                <figure> <img class="responsive" href="#" alt="logo" style="width:200px;height:200px"> </figure>
-            </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> <span>Jonathan Lancaster</span> </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <nav class="navbar-text navbar-right">
                     <ul class="nav">
                         <li class="dropdown"> <a id="dLabel" data-target="dropdown-menu" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects <span class="caret"></span></a>
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="#collapse1">Feed Reader Tester</a></li>
+                                <li><a href="#frt">Feed Reader Tester</a></li>
                                 <li><a href="">Neighborhood Map</a></li>
                                 <li><a href="">Arcade Game Clone</a></li>
                                 <li><a href="">Website Optimization</a></li>
                             </ul>
                         </li>
-                        <li><a href="">about</a></li>
+                        <li><a href="#about">about</a></li>
                         <li><a href="">contact</a></li>
+                        <li><a href="">resume</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <!-- end header-->
         <!-- welcome message -->
-        <div class="jumbotron text-center"> <span class="hidden message">Hi this is my welcome messsage to my page, I really should put something productive and cool in here.</span> </div>
+        <div class="jumbotron text-center"> <span class="hidden message">Welcome to the portfolio of a chef turned web developer, my pages feature web applications focused on functionality.</span> </div>
         <div class="row">
-            <div class="col-md-12 arrow"> <span class="arrow_down hidden fa fa-arrow-down" id="arrow_down"></span> </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 arrow"> <span class="arrow_down hidden fa fa-arrow-down" id="arrow_down"></span> </div>
         </div>
         <!--end message -->
         <!--div for text box-->
         <div class="row">
-            <div class="col-md-12 header_h2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header_h2">
                 <h2>My work over the past year.</h2> </div>
         </div>
         <div class="row content-panels">
-            <div class="col-md-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="panel-group" id="accordion">
                     <div class="panel">
                         <div class="panel-heading">
-                            <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">RSS Feed Reader Tester</h2></a>
+                            <h2 class="text-center panel-title" id="frt"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">RSS Feed Reader Tester</h2></a>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <h2 class="text-center">Case Study</h2> <span><em>link to website</em></span> </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h2>Case Study</h2> <span><em><a href="https://jcast90.github.io/udacity_feedReader/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <article>
-                                            <h3>Problem:</h3>
+                                            <h3>Challenge:</h3>
                                             <p>Before an application is developed, it is important to run tests to make sure that the application’s functions are working properly. The goal was to run specific tests for an RSS Feed Reader application that uses Google's RSS API and have them all pass. Another part of this challenge included picking up the tests where another developer had left off, thus having to decipher their code before proceeding the tests.</p>
                                             <h3>Solution:</h3>
-                                            <p> First, learn the Jasmine testing framework. Then, read and decipher the previous developer’s code and testing framework. After running a numerous series of tests, the application began to function as predicted, and a feature was even added to test for the URL’s inclusions of http: or https: in order to increase functionality. </p>
-                                        </article>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h2 class="text-center">Code</h2> <span><em>link to website</em></span> </div>
-                                    <div class="col-md-6">
-                                        <article>
-                                            <h3>Problem:</h3>
-                                            <p>Before an application is developed, it is important to run tests to make sure that the application’s functions are working properly. The goal was to run specific tests for an RSS Feed Reader application that uses Google's RSS API and have them all pass. Another part of this challenge included picking up the tests where another developer had left off, thus having to decipher their code before proceeding the tests.</p>
-                                            <h3>Solution:</h3>
-                                            <p> First, learn the Jasmine testing framework. Then, read and decipher the previous developer’s code and testing framework. After running a numerous series of tests, the application began to function as predicted, and a feature was even added to test for the URL’s inclusions of http: or https: in order to increase functionality. </p>
-                                        </article>
+                                            <p> First, read and decipher the previous developer’s code and testing framework. After running a numerous series of tests, the application began to function as predicted, and a feature was even added to test for the URL’s inclusions of http: or https: in order to increase functionality. </p>
+                                            <h3 data-toggle="modal" data-target="#ftr">Code:</h3> <span><em><a href="https://github.com/jcast90/udacity_feedReader">Check out the full code!</a></em></span> </article>
                                     </div>
                                 </div>
                             </div>
@@ -99,15 +85,15 @@
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <h2>Case Study</h2> </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h2>Case Study</h2> <span><em><a href="https://jcast90.github.io/neighborhood_map/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <article>
-                                            <h3>Problem:</h3>
+                                            <h3>Challenge:</h3>
                                             <p>The goal of this project was to create a single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map should be made to reflect your very own neighborhood. </p>
                                             <h3>Solution:</h3>
                                             <p> Using JavaScript, I was able to have a functioning map with hard-coded locations and a search option. After Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Yelp API. This neighborhood map includes descriptions, ratings, and address information for the local businesses around my house in La Jolla. </p>
-                                        </article>
+                                            <h3 data-toggle="modal" data-target="#map">Code Snippet</h3> <span><em><a href="https://github.com/jcast90/neighborhood_map">Check out the full code!</a></em></span> </article>
                                     </div>
                                 </div>
                             </div>
@@ -120,15 +106,15 @@
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <h2>Case Study</h2> </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h2>Case Study</h2><span><em><a href="https://jcast90.github.io/arcadeGame/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <article>
-                                            <h3>Problem:</h3>
+                                            <h3>Challenge:</h3>
                                             <p>After being given half of the HTML5 code for a partially developed game, I needed to create the rest of the game using Object Oriented JavaScript. Having only half of the code meant reading someone else’s code and modifying it to match my JavaScript. Not only that, but I had to add enemies, and have them collide with the player. </p>
                                             <h3>Solution</h3>
                                             <p> The best solution was to start building the map, then the enemies and their functions and finally the main character and his functions. After going through different processes for how an enemy can affect the player, I ultimately went with a for loop and a math.random(). This allowed for a random number of enemies between a certain number to be generated. Ultimately, I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. </p>
-                                        </article>
+                                            <h4 data-toggle="modal" data-target="#game">Code snippet</h4> <span><em><a href="https://github.com/jcast90/arcadeGame">Check out the full code!</a></em></span> </article>
                                     </div>
                                 </div>
                             </div>
@@ -141,15 +127,15 @@
                         <div id="collapse4" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <h2>Case Study</h2> </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h2>Case Study</h2><span><em><a href="https://jcast90.github.io/website-opt/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <article>
-                                            <h3>Problem:</h3>
+                                            <h3>Challenge:</h3>
                                             <p>In this project, we were given a website that was slow, and had choppy animation and had a very high load time. The problem, was going into someone else code, understanding what they were doing, then take it apart and work with it so the page would load at an optimal speed and not have choppy frames in their animation. </p>
                                             <h3>Solution:</h3>
                                             <p> In order to increase the sites load time, the ‘googlefont’ was loaded into the HTML page with javascript, the css was moved to the end of the HTML document. The next step to solving the 60fps for the animation was to go through the javascript. First, I pulled out a function that was creating a new pizza with every for loop. Instead, it was created once, and another function was used to run through the container size and generate pizzas. Next, I limited the amount of pizzas that were being generated within the container. Finally, I went to the variable containing the pizza sizes and optimized them to be only the size that needed to be loaded. Ultimately, I optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. </p>
-                                        </article>
+                                            <h3 data-toggle="modal" data-target="#web_opt">Code:</h3> <span><em><a href="https://github.com/jcast90/website-opt/tree/master/views">Check out the full code!</a></em></span> </article>
                                     </div>
                                 </div>
                             </div>
@@ -159,26 +145,170 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <h2>About Me</h2>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt, repellat assumenda reprehenderit in sequi illo exercitationem reiciendis maxime voluptatum temporibus odit. Excepturi mollitia, itaque natus iusto nobis minus amet!</div>
-                <div>Officiis magnam alias nesciunt et beatae odit, aut nobis quia. Ullam magni ratione nisi placeat necessitatibus, illum ea quisquam doloremque inventore voluptate praesentium, eum porro. Laudantium, sint, iste. Voluptatibus, placeat.</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Contact Me</h2> 
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores velit recusandae et similique ratione id, natus harum, officia dolorem incidunt aut porro nam illum culpa nesciunt deleniti ad beatae non.</div>
-                <div>Praesentium quibusdam, nobis facilis! Sunt quisquam libero ex deleniti quos odit perferendis illo eius culpa, maxime, quaerat vitae ipsa sed officiis earum incidunt eum animi fugit aut, quidem ducimus natus.</div>
-                <div>Quis nobis dicta ducimus voluptates totam dignissimos distinctio, suscipit cumque fugit nemo modi quisquam rem impedit quae sint! Quis aliquid ratione hic, aspernatur facilis pariatur. Maiores temporibus fugit repellendus aliquid.</div>
-                <div>Delectus blanditiis rerum, autem nam fugiat! Saepe non ducimus, a, soluta neque debitis aliquam laborum expedita aperiam autem eum delectus nemo alias natus voluptate sit, earum maiores consequuntur, perspiciatis ex!</div>
-                <div>Vel quam esse vitae molestias saepe asperiores eius a, quibusdam. Possimus culpa, suscipit recusandae maiores veniam. Sapiente suscipit temporibus, harum animi eaque sequi. Accusamus aut quam nesciunt fugit ad eaque.</div>
-                <div>Numquam quae, libero suscipit possimus pariatur iusto corrupti voluptas, quidem officia temporibus rem, perspiciatis eveniet ipsum vitae ratione eligendi odit commodi facilis aspernatur? Recusandae doloremque accusamus, molestias maiores nam. Vero.</div>
-                <div>Quam, dolor sed porro voluptatem libero, a qui perspiciatis at, praesentium dicta explicabo possimus amet omnis perferendis! Iste, voluptate quisquam, temporibus nisi deleniti sed velit? Iure fuga, dolores ipsa minima!</div>
-                <div>Harum porro dolore eos sapiente veritatis unde quos ullam minima, eveniet illum, fugiat officia in beatae voluptas nostrum. Animi quibusdam aperiam sequi ad harum, beatae iste officiis. Vero voluptatem, tenetur!</div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 id="about">About Me</h2>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <span>My name is Jonathan Lancaster, my career started off in a small kitchen in Alabama. After a few years of working my way over to California, to a 5 diamond resort, I felt as though I needed a change of direction. Ever since high school I have been interested in design, coding, technology and have been an avid learner. A year ago I decided to officially make a change and learn to Code. Finally, my portfolio is created, I have work to showcase my skills and i am always trying to learn new technologies, new programming languages and frameworks, and even new recipes. I am constantly working on personal projects, as well as, school projects.  My goal is to make it to an awesome design agency and potentially, one day, start my own company. With your help, I hope to achieve these goals and contribute to your team by helping create award winning websites and lasting friendships</span> </div>
                 </div>
-        </div>
-    </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2>Contact Me</h2> </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button>Get in Touch!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <span class="fa fa-github" aria-hidden="true"></span> </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <span class="fa fa-linkedin-square" aria-hidden="true"></span></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <span class="fa fa-envelope" aria-hidden="true"></span></div>
+                </div>
+            </div>
+            <div class="modal fade" id="ftr" tabindex="-1" role="dialog" aria-labelledby="ftr" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="ftr_title">RSS Feed Reader</h4> </div>
+                        <div class="modal-body"><pre>
+$(function () {
+    describe('RSS Feeds', function () {
+        it('are defined', function () {
+            expect(allFeeds).toBeDefined();
+            expect(allFeeds.length).not.toBe(0);
+        });
+        it('Url is defined, not empty, and URL is formatted properly', function () {
+            /*loop through allfeeds URL making sure its defined and not empty*/
+            allFeeds.forEach(function (feed, i) {
+                /*tests that URL's  start with HTTPS*/
+                var regularExpressionUrl = /^(https:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+                var feedUrl = feed.url;
+                expect(feedUrl).toBeDefined();
+                expect(feedUrl.length).not.toBe(0);
+                expect(allFeeds[i].url).toMatch(regularExpressionUrl);
+                /* console.log(allFeeds[i].url); */
+            });
+        });
+        it('Name is defined', function () {
+            /*loops throught allfeeds name making sure they are defined and not empty*/
+            allFeeds.forEach(function (feed) {
+                feedName = feed.name;
+                expect(feedName).toBeDefined();
+                expect(feedName.length).not.toBe(0);
+            });
+        });
+    });
+                        </pre> <span>This test is important because it not only tests for content to be loaded but also checks whether the URL starts with HTTPS.</span> </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="map" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="map_title">Neighborhood Map</h4> </div>
+                        <div class="modal-body"><pre>
+            var settings = {
+                url: yelp_url,
+                data: parameters,
+                cache: true, // This is crucial to include as well to prevent jQuery from adding on a cache-buster parameter "_=23489489749837", invalidating our oauth-signature
+                dataType: 'jsonp',
+                success: function (yelpResults) {
+                    console.log(yelpResults);
+                    console.log(yelpResults.businesses[0].rating);
+                    console.log(yelpResults.businesses[0].rating_img_url);
+
+                    var stars = yelpResults.businesses[0].rating_img_url;
+                    var starRating = '&lt;img src="' + stars + '"&gt;';
+                    var dblSpace = '  ';
+                    var rating = 'Rating: ';
+                    // Do stuff with results
+                    var iwContent = '&lt;div id="iw_container"&gt;' + '&lt;div class="iw_title"&gt;' + data.title + '&lt;/div&gt;' + '&lt;div class="iw_content"&gt;' + data.streetAddress + '&lt;br /&gt;' + data.cityAddress + '&lt;br /&gt;' + rating + yelpResults.businesses[0].rating + dblSpace + starRating + '&lt;/div&gt;&lt;/div&gt;';
+
+                    infoWindow.setContent(iwContent, yelpResults);
+                    infoWindow.open(map, self.marker);
+
+                    that.setAnimation(google.maps.Animation.BOUNCE);
+                    setTimeout(function () {
+                        that.setAnimation(null);
+                    }, 1400);
+                },
+                error: function (xhr, status, error) {
+                    alert("An AJAX error occured: " + status + "\nError: " + error + "\nError detail: " + xhr.responseText);
+                }
+            };
+
+            // Send AJAX query via jQuery library.
+            $.ajax(settings);
+                        </pre> <span>This is where I modified teh Yelp API and had it input the data into the infowindow.</span> </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="game" tabindex="-1" role="dialog" aria-labelledby="game" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="game_title">Arcade Game Clone</h4> </div>
+                        <div class="modal-body"><pre>
+function maybeAddEnemyToLane(lane) {
+    // generate a random number between 0 and 1
+    if (Math.random() &lt;= lane.probability &amp;&amp; allEnemies.length &lt; 9) {
+    var newEnemy = new Enemy(lane.number, lane.speed);
+    allEnemies.push(newEnemy);
+    }
+
+                        </pre> <span> In this line of code, I made a function that would randomly generate a certain number of enemies that were created on a specific lane.</span> </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="web_opt" tabindex="-1" role="dialog" aria-labelledby="web_opt" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="web_opt_title">Website Opt</h4> </div>
+                        <div class="modal-body"><pre>
+// Generates the sliding pizzas when the page loads.
+document.addEventListener('DOMContentLoaded', function() {
+  var cols = 8;
+  var s = 256;
+
+  var screenHeight = window.screen.height;
+  var rows = (Math.ceil(screenHeight/s));
+  var totalPizzas = rows * cols;
+
+  var elem;
+  var movingPizzas1 = document.getElementById("movingPizzas1")
+// lowered the number of pizzas generated in order to increase load time, only a few actually visible at a time
+  for (var i = 0; i &lt; totalPizzas; i++) {
+    elem = document.createElement('img');
+    elem.className = 'mover';
+    elem.src = "images/pizza.png";
+    elem.style.height = "100px";
+    elem.style.width = "73.333px";
+    elem.basicLeft = (i % cols) * s;
+    elem.style.top = (Math.floor(i / cols) * s) + 'px';
+    movingPizzas1.appendChild(elem);
+  }
+  updatePositions();
+});
+}
+
+                        </pre> <span>This line is important because it is where I decreased the number of pizzas that were being generated as well as the size of the pizzas. This allows for a quicker load time and faster fps.</span> </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>

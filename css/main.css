@@ -11,12 +11,11 @@ body {
     display: inline;
     float: left;
     text-decoration-color: black;
-    
 }
 
 .jumbotron {
     background-color: #fff !important;
-    height: 70vh;
+    height: 75vh;
 }
 
 .message {
@@ -27,7 +26,7 @@ body {
 
 .arrow {
     text-align: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 .header_h2 {
@@ -42,13 +41,18 @@ body {
     text-align: center;
 }
 
+pre {
+    max-height: 400px;
+    overflow: scroll;
+}
+
 .content-panels {
     margin: 0;
     padding: 0;
 }
 
 .panel {
-    background-color: aqua !important;
+    background-color: darkgrey !important;
 }
 
 .panel-heading {
