@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!--<script src="jquery-ui.min.js"></script>-->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script type="text/javascript" src="js/app.js"></script>
@@ -43,14 +46,17 @@
         </div>
         <!-- end header-->
         <!-- welcome message -->
-        <div class="jumbotron text-center"> <span class="hidden">Hi this is my welcome messsage to my page, I really should put something productive and cool in here.</span> </div>
+        <div class="jumbotron text-center"> <span class="hidden message">Hi this is my welcome messsage to my page, I really should put something productive and cool in here.</span> </div>
+        <div class="row">
+            <div class="col-md-12 arrow"> <span class="arrow_down hidden fa fa-arrow-down" id="arrow_down"></span> </div>
+        </div>
         <!--end message -->
         <!--div for text box-->
         <div class="row">
             <div class="col-md-12 header_h2">
                 <h2>My work over the past year.</h2> </div>
         </div>
-        <div class="row">
+        <div class="row content-panels">
             <div class="col-md-12">
                 <div class="panel-group" id="accordion">
                     <div class="panel">
@@ -62,6 +68,18 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h2 class="text-center">Case Study</h2> <span><em>link to website</em></span> </div>
+                                    <div class="col-md-6">
+                                        <article>
+                                            <h3>Problem:</h3>
+                                            <p>Before an application is developed, it is important to run tests to make sure that the application’s functions are working properly. The goal was to run specific tests for an RSS Feed Reader application that uses Google's RSS API and have them all pass. Another part of this challenge included picking up the tests where another developer had left off, thus having to decipher their code before proceeding the tests.</p>
+                                            <h3>Solution:</h3>
+                                            <p> First, learn the Jasmine testing framework. Then, read and decipher the previous developer’s code and testing framework. After running a numerous series of tests, the application began to function as predicted, and a feature was even added to test for the URL’s inclusions of http: or https: in order to increase functionality. </p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2 class="text-center">Code</h2> <span><em>link to website</em></span> </div>
                                     <div class="col-md-6">
                                         <article>
                                             <h3>Problem:</h3>
@@ -149,7 +167,16 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2>Contact Me</h2> </div>
+                <h2>Contact Me</h2> 
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores velit recusandae et similique ratione id, natus harum, officia dolorem incidunt aut porro nam illum culpa nesciunt deleniti ad beatae non.</div>
+                <div>Praesentium quibusdam, nobis facilis! Sunt quisquam libero ex deleniti quos odit perferendis illo eius culpa, maxime, quaerat vitae ipsa sed officiis earum incidunt eum animi fugit aut, quidem ducimus natus.</div>
+                <div>Quis nobis dicta ducimus voluptates totam dignissimos distinctio, suscipit cumque fugit nemo modi quisquam rem impedit quae sint! Quis aliquid ratione hic, aspernatur facilis pariatur. Maiores temporibus fugit repellendus aliquid.</div>
+                <div>Delectus blanditiis rerum, autem nam fugiat! Saepe non ducimus, a, soluta neque debitis aliquam laborum expedita aperiam autem eum delectus nemo alias natus voluptate sit, earum maiores consequuntur, perspiciatis ex!</div>
+                <div>Vel quam esse vitae molestias saepe asperiores eius a, quibusdam. Possimus culpa, suscipit recusandae maiores veniam. Sapiente suscipit temporibus, harum animi eaque sequi. Accusamus aut quam nesciunt fugit ad eaque.</div>
+                <div>Numquam quae, libero suscipit possimus pariatur iusto corrupti voluptas, quidem officia temporibus rem, perspiciatis eveniet ipsum vitae ratione eligendi odit commodi facilis aspernatur? Recusandae doloremque accusamus, molestias maiores nam. Vero.</div>
+                <div>Quam, dolor sed porro voluptatem libero, a qui perspiciatis at, praesentium dicta explicabo possimus amet omnis perferendis! Iste, voluptate quisquam, temporibus nisi deleniti sed velit? Iure fuga, dolores ipsa minima!</div>
+                <div>Harum porro dolore eos sapiente veritatis unde quos ullam minima, eveniet illum, fugiat officia in beatae voluptas nostrum. Animi quibusdam aperiam sequi ad harum, beatae iste officiis. Vero voluptatem, tenetur!</div>
+                </div>
         </div>
     </div>
 </body>

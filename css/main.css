@@ -1,5 +1,6 @@
 body {
     position: relative;
+    font-family: "Avenir Next", sans-serif !important;
 }
 
 .hidden {
@@ -10,16 +11,23 @@ body {
     display: inline;
     float: left;
     text-decoration-color: black;
+    
 }
 
 .jumbotron {
     background-color: #fff !important;
-    height: 80vh;
+    height: 70vh;
 }
 
-.jumbotron span {
+.message {
     position: relative;
     top: 30%;
+    font-size: 1.4em;
+}
+
+.arrow {
+    text-align: center;
+    height: 10vh;
 }
 
 .header_h2 {
@@ -32,6 +40,11 @@ body {
     position: relative;
     top: 7vh;
     text-align: center;
+}
+
+.content-panels {
+    margin: 0;
+    padding: 0;
 }
 
 .panel {
