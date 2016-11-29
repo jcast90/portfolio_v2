@@ -1,38 +1,68 @@
+
 body {
     position: relative;
     font-family: "Avenir Next", sans-serif !important;
+     background-color:#383E42;
+
 }
 
 .hidden {
     display: none;
 }
 
-.nav li {
-    display: inline;
+.container{
+    background-color:#383E42 !important;
+    background-size:cover;
+    height: 100vh;
+    position:relative;
+}
+.logo{
+    position:relative;
+    display:inline-block;
+    margin:20px 0;
+    color:#D8E3EC;
+
+}
+
+.nav li{
+    display: inline-block;
     float: left;
-    text-decoration-color: black;
+
+}
+.nav li a{
+    color:#D8E3EC;
 }
 
 .jumbotron {
-    background-color: #fff !important;
-    height: 75vh;
+    background-color: transparent;
+    position:relative;
+    top:25vh;
+
 }
 
 .message {
     position: relative;
     top: 30%;
     font-size: 1.4em;
+    color:#D8E3EC;
 }
 
-.arrow {
+ .arrow {
+     color:#D8E3EC;
+     font-size:1.4em;
     text-align: center;
-    height: 15vh;
+    position:absolute;
+    bottom:5vh;
+    z-index: 1000;
 }
 
 .header_h2 {
-    background-color: #f4e6e6;
+    color:#383E42;
+    background-color:#BED1E0;
+    border-bottom: 1px solid #97A8B5;
     text-align: center;
     height: 20vh;
+
 }
 
 .header_h2 h2 {
@@ -41,20 +71,58 @@ body {
     text-align: center;
 }
 
+.content{
+    padding-left:0 !important;
+    padding-right:0 !important;
+    background-color:#BED1E0;
+
+
+
+}
+
+.panel {
+    color:#BED1E0;
+    border-radius:0 !important;
+    background-color: #657079   !important;
+    border-bottom:solid 3px #97A8B5;
+    margin-top:0 !important;
+
+
+}
+
+.panel-heading {
+    position:relative;
+    top:3vh;
+    height: 10vh;
+
+
+}
+/*h3 styling for code snippet*/
+.cursor{
+    cursor: pointer;
+}
+/*module styling*/
 pre {
     max-height: 400px;
     overflow: scroll;
 }
-
-.content-panels {
-    margin: 0;
-    padding: 0;
+#about_me{
+   color:#383E42;
+    background-color:#BED1E0;
 }
+#about_me h2{
+    text-align:center;
+    padding-bottom:4vh;
 
-.panel {
-    background-color: darkgrey !important;
 }
+#about_me article{
+   font-weight:500;
+    margin:0 auto 10vh;
+    max-width:980px;
 
-.panel-heading {
-    height: 10vh;
+}
+#contact{
+    height:30vh;
+    background-color:#383E42;
+    width:100%;
 }
