@@ -43,8 +43,14 @@ body {
 .message {
     position: relative;
     top: 30%;
+<<<<<<< Updated upstream
     font-size: 1.4em;
     color:#D8E3EC;
+||||||| merged common ancestors
+    font-size: 1.4em;
+=======
+    font-size: 3vh;
+>>>>>>> Stashed changes
 }
 
  .arrow {
