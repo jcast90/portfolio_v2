@@ -5,7 +5,9 @@ body {
      background-color:#383E42;
 
 }
-
+a{
+    cursor:pointer;
+}
 .hidden {
     display: none;
 }
@@ -30,9 +32,16 @@ body {
 
 }
 .nav li a{
+     background-color:transparent !important;
     color:#D8E3EC;
 }
-
+.nav li a:hover{
+    background-color:transparent !important;
+    color:#BED1E0;
+}
+.dropdown-menu{
+    background-color: transparent !important;
+}
 .jumbotron {
     background-color: transparent;
     position:relative;
@@ -113,7 +122,7 @@ pre {
     overflow: scroll;
 }
 #about_me{
-   color:#383E42;
+    color:#383E42;
     background-color:#BED1E0;
 }
 #about_me h2{
@@ -124,11 +133,48 @@ pre {
 #about_me article{
    font-weight:500;
     margin:0 auto 10vh;
+    padding:0 15px;
     max-width:980px;
 
 }
 #contact{
+    position:absolute;
     height:30vh;
     background-color:#383E42;
     width:100%;
+     text-align:center;
+    color:#BED1E0;
+
+}
+#contact_me{
+    font-size:2em;
+    position:relative;
+    background-color:#657079;
+    top: 5vh;
+    margin:10px;
+    padding:10px;
+    border:solid 1px #97A8B5;
+    border-radius:30px;
+    display:inline;
+}
+#contact_me:hover{
+   color:#383E42;
+background-color:#BED1E0;    
+}
+#contact a{
+    text-decoration-style: none;
+    text-decoration: none;
+    
+}
+a .icon{
+  font-size: 2em;
+    position:relative;
+    margin:0 auto;
+    width:10%;
+   float: left;
+    display:inline;
+    color:#BED1E0;
+   
+   
+    
 }
