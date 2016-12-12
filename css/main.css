@@ -1,7 +1,7 @@
 body {
     position: relative;
     font-family: "Avenir Next", sans-serif !important;
-    background-color: black;
+   background-color: #383E42;
 }
 
 span a {
@@ -17,6 +17,11 @@ ul{
 li{
   list-style-type: none;
 }
+
+a{
+    cursor:pointer;
+}
+
 .hidden {
     display: none;
 }
@@ -28,49 +33,39 @@ li{
     position: relative;
 }
 
-.logo {
-    position: relative;
-    display: inline-block;
-    margin: 20px 0;
-    color: #D8E3EC;
+.logo{
+    position:relative;
+    display:inline-block;
+    margin:20px 0;
+    color:#D8E3EC;
+}
+.container-fluid{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+.row{
+   margin-left:0 !important;
+    margin-right:0 !important;
 }
 
+/* Navigation */
 .nav li {
     display: inline-block;
     float: left;
 }
 
 .nav li a {
+    background-color:transparent !important;
     color: #D8E3EC;
 }
 
 .nav li a:hover {
+    background-color:transparent !important;
     text-decoration: underline;
+    color:#BED1E0;
 }
 
-.nav .open>a,
-.nav .open>a:hover,
-.nav .open>a:focus,
-.nav>li>a:hover,
-.nav>li>a:focus,
-nav li a,
-nav li a:hover,
-nav li a:focus {
-    background-color: transparent;
-}
-
-.dropdown-menu {
-    background-color: transparent;
-}
-
-.dropdown-menu li {
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #97A8B5;
-    text-decoration: none !important;
-}
+/* end nav styling */
 
 .jumbotron {
     background-color: transparent;
@@ -114,7 +109,7 @@ nav li a:focus {
     padding-right: 0 !important;
     background-color: #BED1E0;
 }
-
+/* panels */
 .panel {
     color: #BED1E0;
     border-radius: 0 !important;
@@ -129,8 +124,9 @@ nav li a:focus {
     height: 30vh;
 }
 
-
-
+.panel-title{
+   font-size:20px;
+}
 
 /*button styling for code snippet*/
 
@@ -166,47 +162,59 @@ pre {
     color: #BED1E0;
     background-color: #383E42;
 }
-
 .modal-body {
     color: #383E42;
     background-color: #97A8B5;
 }
-
 .modal-footer {
     color: #BED1E0;
     background-color: #383E42;
     margin-top: 0 !important;
-}
-
-
+}    
+    
+    
 /*about me section styling*/
-
-#about_me {
-    color: #383E42;
-    background-color: #BED1E0;
+#about_me{
+    color:#383E42;
+    background-color:#BED1E0;
+    padding-left:20px;
+    width:100vw;
 }
 
 #about_me h2 {
     text-align: center;
     padding-bottom: 4vh;
 }
+#about_me article{
+   font-weight:500;
+    margin:0 auto 10vh;
+    padding:0 15px;
+    max-width:980px;}
 
-#about_me article {
-    font-weight: 500;
-    margin: 0 auto 10vh;
-    max-width: 980px;
+
+
+
+
+/*contact*/
+#contact{
+    position:absolute;
+    height:30vh;
+    background-color:#383E42;
+    width:100%;
+     text-align:center;
+    color:#BED1E0;
+
 }
+
 
 .fa:before {
     font-size: 4vh;
-    
-   
 }
 .icons li{
- 
    display:inline;
    margin-right:2vh;
 }
+
 footer {
     text-align: center;
     padding: 5vh 0;
@@ -219,10 +227,32 @@ footer h2{
 footer li{
     margin:.5vh 0;
 }
+a .icon{
+  font-size: 2em;
+    position:relative;
+    margin:0 auto;
+    width:10%;
+   float: left;
+    display:inline;
+    color:#BED1E0 !important;
+   
+   
+    
+}
+@include media-breakpoint-up(sm) {
+  h2 {
+    font-size: 5px;
+  }
+}
 
+@include media-breakpoint-up(md) {
+  h2 {
+    font-size: 36px;
+  }
+}
 
-#contact {
-    height: 30vh;
-    background-color: #383E42;
-    width: 100%;
+@include media-breakpoint-up(lg) {
+  h2 {
+    font-size: 63px;
+  }
 }
