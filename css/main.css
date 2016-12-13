@@ -268,11 +268,11 @@ footer li {
         display: none;
     }
     .jumbotron {
-        top: 10vh;
+        top: 5vh;
     }
     .arrow {
         font-size: 1.75em;
-        top: 30vh;
+        top: 18vh;
     }
     .logo {
         display: block;
