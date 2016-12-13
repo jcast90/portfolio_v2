@@ -250,12 +250,17 @@ a .icon{
    
     
 }
+
+/*media queries*/
 @media screen and (min-width:320px){
     nav{
         display:none;
     }
     .jumbotron{
         top:20vh;
+    }
+    .message{
+        font-size:1.5em;
     }
     .arrow{
         top:30vh;
@@ -287,11 +292,68 @@ a .icon{
       text-align:center;
        font-size:2em;
     }
+    .header_h2 h2 {
+        padding-top:40px;
+    }
+    .panel-heading{
+        top:-3vh;
+    }
     
 }
-@media screen and (min-width:500px){
-    
-    h2{
+@media screen and (min-width:550px){
+   
+    nav{
+    display: inline-block;
+    float:right;
+    margin-top:4.5vh;
+}
+.nav li {
+    display: inline-block;
+    float: left;
+    margin:0 10px;
+}
+
+.nav li a {
+    background-color:transparent !important;
+    color: #D8E3EC;
+}
+
+.nav li a:hover {
+    background-color:transparent !important;
+    text-decoration: underline;
+    color:#BED1E0;
+}
+    .jumbotron{
+        top:20vh;
+    }
+    .arrow{
+        top:45vh;
+    }
+    .logo{
+        display:inline;
+        float:left;
+      text-align:center;
+       font-size:2em;
+    }
+    .header_h2 h2 {
+        font-size:3em;
+        padding-top:7vh;
+    }
+    .panel-heading{
+        top:-3vh;
+    }
+    .panel-title{
+        font-size:2.5em;
+    }
+}
+@media screen and (min-width:800px){
+    .jumbotron{
+        top:20vh;
+    }
+    .message{
         font-size:4em;
+    }
+    .arrow{
+        top:60vh;
     }
 }
