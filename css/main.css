@@ -1,7 +1,7 @@
 body {
     position: relative;
     font-family: "Avenir Next", sans-serif !important;
-   background-color: #383E42;
+    background-color: #383E42;
 }
 
 span a {
@@ -11,114 +11,105 @@ span a {
 span a:hover {
     color: #BED1E0;
 }
-ul{
-    padding-left:0;
-}
-li{
-  list-style-type: none;
+
+ul {
+    padding-left: 0;
 }
 
-a{
-    cursor:pointer;
+li {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    
 }
 
 .hidden {
     display: none;
 }
-.background{
-    width:100%;
-    height:100vh;
-   position:absolute;
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background
 }
+
 .container {
-  
     height: 100vh;
     position: relative;
 }
 
-.logo{
-    position:relative;
-    display:inline-block;
-    margin:20px 0;
-    color:#D8E3EC;
-}
-.container-fluid{
-    padding-left:0 !important;
-    padding-right:0 !important;
-}
-.row{
-   margin-left:0 !important;
-    margin-right:0 !important;
-}
-
-/* Navigation */
-nav{
-    float:right;
-    margin-top:15px;
-}
-.nav li {
+.logo {
+    position: relative;
     display: inline-block;
-    float: left;
-    margin:0 10px;
-}
-
-.nav li a {
-    background-color:transparent !important;
+    margin: 2em 0;
     color: #D8E3EC;
 }
 
-.nav li a:hover {
-    background-color:transparent !important;
-    text-decoration: underline;
-    color:#BED1E0;
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
-/* end nav styling */
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 
 /*message and arrow*/
+
 .jumbotron {
     background-color: transparent;
     position: relative;
-    
 }
 
 .message {
     position: relative;
     color: #D8E3EC;
-    font-size: 3vh;
+ 
 }
 
 .arrow {
     color: #D8E3EC;
-    font-size: 2vh;
     text-align: center;
     position: relative;
     cursor: pointer;
 }
+
+
 /* end styling*/
 
+
 /*my work header*/
+
 .header_h2 {
     color: #383E42;
     background-color: #BED1E0;
     border-bottom: 1px solid #97A8B5;
     text-align: center;
-    height:30vh;
+    height: 30vh;
 }
 
 .header_h2 h2 {
-  
     position: relative;
     text-align: center;
 }
+
+
 /*end styling*/
+
 .content {
     padding-left: 0 !important;
     padding-right: 0 !important;
     background-color: #BED1E0;
 }
 
+
 /* panels */
+
 .panel {
     color: #BED1E0;
     border-radius: 0 !important;
@@ -132,11 +123,15 @@ nav{
     height: 30vh;
 }
 
-.panel-title{
-    position:relative;
-   font-size:20px;
-    top:15vh;
+.panel-title {
+    position: relative;
+    top: 15vh;
 }
+.panel-body{
+    max-width:1200px;
+    margin:0 auto;
+}
+
 
 /*button styling for code snippet*/
 
@@ -172,188 +167,211 @@ pre {
     color: #BED1E0;
     background-color: #383E42;
 }
+
 .modal-body {
     color: #383E42;
     background-color: #97A8B5;
 }
+
 .modal-footer {
     color: #BED1E0;
     background-color: #383E42;
     margin-top: 0 !important;
-}    
-    
-    
+}
+
+
 /*about me section styling*/
-#about_me{
-    color:#383E42;
-    background-color:#BED1E0;
-    padding-left:20px;
-    width:100vw;
+
+#about_me {
+    color: #383E42;
+    background-color: #BED1E0;
+    padding-left: 20px;
+    width: 100vw;
 }
 
 #about_me h2 {
     text-align: center;
     padding-bottom: 4vh;
 }
-#about_me article{
-   font-weight:500;
-    margin:0 auto 10vh;
-    padding:0 15px;
-    max-width:980px;
+
+#about_me article {
+    font-weight: 500;
+    margin: 0 auto 10vh;
+    padding: 0 15px;
+    max-width: 980px;
 }
-
-
-
 
 
 /*contact*/
-#contact{
-    position:absolute;
-    height:30vh;
-    background-color:#383E42;
-    width:100%;
-     text-align:center;
-    color:#BED1E0;
-
-}
-
-
-.fa:before {
-    font-size: 4vh;
-}
-.icons li{
-   display:inline;
-   margin-right:2vh;
-}
-
 footer {
     text-align: center;
     padding: 5vh 0;
     color: #BED1E0;
 }
-footer h2{
-    font-size:4vh;
-    margin-bottom:2vh;
-}
-footer li{
-    margin:.5vh 0;
-}
-a .icon{
-  font-size: 2em;
-    position:relative;
-    margin:0 auto;
-    width:10%;
-   float: left;
-    display:inline;
-    color:#BED1E0 !important;
+
+footer h2 {
+    font-size: 4vh;
    
-   
+}
+
+footer li {
+    margin: 1em 0;
+}
+
+.icon_group li {
+    display: inline;
+
+    margin:0 2em;
+  
+}
+.icons::before{
+    font-size:3em;
+}
+.icon_group a {
+    color:transparent;
+    color: #BED1E0;
     
 }
+
 
 /*media queries*/
-@media screen and (min-width:320px){
-    nav{
-        display:none;
+
+@media screen and (min-width:320px) {
+    nav {
+        display: none;
     }
-    .jumbotron{
-        top:20vh;
+    .jumbotron {
+        top: 20vh;
     }
-    .message{
-        font-size:1.5em;
+    .message {
+        font-size: 1.5em;
     }
-    .arrow{
-        top:30vh;
+    .arrow {
+        font-size: 1.5em;
+        top: 30vh;
     }
-    .logo{
-       
-        display:block;
-      text-align:center;
-       font-size:2em;
+    .logo {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+    }
+    .header_h2 h2 {
+        padding-top: 1.75em;
     }
 }
 
-@media screen and (min-width:375px){
-    
-    h2{
-        font-size:2em;
+@media screen and (min-width:375px) {
+    h2 {
+        font-size: 2em;
     }
-    nav{
-        display:none;
+    nav {
+        display: none;
     }
-    .jumbotron{
-        top:10vh;
+    .jumbotron {
+        top: 10vh;
     }
-    .arrow{
-        top:30vh;
+    .arrow {
+        font-size: 1.75em;
+        top: 30vh;
     }
-    .logo{
-        display:block;
-      text-align:center;
-       font-size:2em;
+    .logo {
+        display: block;
+        text-align: center;
+        font-size: 2em;
     }
     .header_h2 h2 {
-        padding-top:40px;
+        padding-top: 40px;
     }
-    .panel-heading{
-        top:-3vh;
+    .panel-heading {
+        top: -1em;
     }
-    
-}
-@media screen and (min-width:550px){
    
-    nav{
-    display: inline-block;
-    float:right;
-    margin-top:4.5vh;
-}
-.nav li {
-    display: inline-block;
-    float: left;
-    margin:0 10px;
 }
 
-.nav li a {
-    background-color:transparent !important;
-    color: #D8E3EC;
-}
-
-.nav li a:hover {
-    background-color:transparent !important;
-    text-decoration: underline;
-    color:#BED1E0;
-}
-    .jumbotron{
-        top:20vh;
+@media screen and (min-width:550px) {
+    nav {
+        display: inline-block;
+        float: right;
+        margin-top: 4.5vh;
     }
-    .arrow{
-        top:45vh;
+    .nav li {
+        display: inline-block;
+        float: left;
+        margin: 2em 10px;
     }
-    .logo{
-        display:inline;
-        float:left;
-      text-align:center;
-       font-size:2em;
+    .nav li a {
+        background-color: transparent !important;
+        color: #D8E3EC;
+    }
+    .nav li a:hover {
+        background-color: transparent !important;
+        text-decoration: underline;
+        color: #BED1E0;
+    }
+    .jumbotron {
+        top: 20vh;
+    }
+    .arrow {
+        font-size: 2em;
+        top: 40vh;
+    }
+    .logo {
+     
+        display: inline;
+        float: left;
+        text-align: center;
+        font-size: 2em;
     }
     .header_h2 h2 {
-        font-size:3em;
-        padding-top:7vh;
+        font-size: 3em;
+        padding-top: 2.75em;
     }
-    .panel-heading{
-        top:-3vh;
+    .panel-heading {
+        top: -3vw;
     }
-    .panel-title{
-        font-size:2.5em;
+    .panel-title {
+        font-size: 2.5em;
     }
 }
-@media screen and (min-width:800px){
-    .jumbotron{
-        top:20vh;
+
+@media screen and (min-width:700px) {
+    .jumbotron {
+        top: 20vh;
     }
-    .message{
-        font-size:4em;
+    .message {
+        font-size: 3em;
     }
-    .arrow{
-        top:60vh;
+    .arrow {
+        top: 40vh;
+        font-size: 2em;
+    }
+    .header_h2 h2 {
+        font-size: 3em;
+        padding-top: 3em;
+    }
+}
+@media screen and (min-width:1000px) {
+   
+    .jumbotron {
+        top: 20vh;
+    }
+    .message {
+        font-size: 3em;
+    }
+   
+    .header_h2 h2 {
+        font-size: 3em;
+        padding-top: 3em;
+    }
+ 
+}
+@media screen and (min-width:1200px){
+       #about_me h2{
+        font-size:3em;
+       
+    }
+    #about_me article{
+        font-size:2em;
+        max-width:1200px;
     }
 }
