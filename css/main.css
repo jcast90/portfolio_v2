@@ -25,10 +25,13 @@ a{
 .hidden {
     display: none;
 }
-
+.background{
+    width:100%;
+    height:100vh;
+   position:absolute;
+}
 .container {
-    background-color: #383E42 !important;
-    background-size: cover;
+  
     height: 100vh;
     position: relative;
 }
@@ -49,9 +52,14 @@ a{
 }
 
 /* Navigation */
+nav{
+    float:right;
+    margin-top:15px;
+}
 .nav li {
     display: inline-block;
     float: left;
+    margin:0 10px;
 }
 
 .nav li a {
@@ -67,15 +75,15 @@ a{
 
 /* end nav styling */
 
+/*message and arrow*/
 .jumbotron {
     background-color: transparent;
     position: relative;
-    top: 25vh;
+    
 }
 
 .message {
     position: relative;
-    top: 30%;
     color: #D8E3EC;
     font-size: 3vh;
 }
@@ -84,31 +92,32 @@ a{
     color: #D8E3EC;
     font-size: 2vh;
     text-align: center;
-    position: absolute;
-    bottom: 5vh;
-    z-index: 1000;
+    position: relative;
     cursor: pointer;
 }
+/* end styling*/
 
+/*my work header*/
 .header_h2 {
     color: #383E42;
     background-color: #BED1E0;
     border-bottom: 1px solid #97A8B5;
     text-align: center;
-    height: 20vh;
+    height:30vh;
 }
 
 .header_h2 h2 {
+  
     position: relative;
-    top: 7vh;
     text-align: center;
 }
-
+/*end styling*/
 .content {
     padding-left: 0 !important;
     padding-right: 0 !important;
     background-color: #BED1E0;
 }
+
 /* panels */
 .panel {
     color: #BED1E0;
@@ -120,12 +129,13 @@ a{
 
 .panel-heading {
     position: relative;
-    top: 3vh;
     height: 30vh;
 }
 
 .panel-title{
+    position:relative;
    font-size:20px;
+    top:15vh;
 }
 
 /*button styling for code snippet*/
@@ -189,7 +199,8 @@ pre {
    font-weight:500;
     margin:0 auto 10vh;
     padding:0 15px;
-    max-width:980px;}
+    max-width:980px;
+}
 
 
 
@@ -239,20 +250,48 @@ a .icon{
    
     
 }
-@include media-breakpoint-up(sm) {
-  h2 {
-    font-size: 5px;
-  }
+@media screen and (min-width:320px){
+    nav{
+        display:none;
+    }
+    .jumbotron{
+        top:20vh;
+    }
+    .arrow{
+        top:30vh;
+    }
+    .logo{
+       
+        display:block;
+      text-align:center;
+       font-size:2em;
+    }
 }
 
-@include media-breakpoint-up(md) {
-  h2 {
-    font-size: 36px;
-  }
+@media screen and (min-width:375px){
+    
+    h2{
+        font-size:2em;
+    }
+    nav{
+        display:none;
+    }
+    .jumbotron{
+        top:10vh;
+    }
+    .arrow{
+        top:30vh;
+    }
+    .logo{
+        display:block;
+      text-align:center;
+       font-size:2em;
+    }
+    
 }
-
-@include media-breakpoint-up(lg) {
-  h2 {
-    font-size: 63px;
-  }
+@media screen and (min-width:500px){
+    
+    h2{
+        font-size:4em;
+    }
 }
