@@ -32,8 +32,16 @@ a {
 .background {
     width: 100%;
     height: 100vh;
-    position: absolute;
-    background
+    background: url('../imgs/Jonathan-web-header-1.jpg') no-repeat center center;
+    background-size:cover;
+}
+.intro{
+    font-size:3em;
+    position:relative;
+    display:block;
+}
+.name{
+    font-size:4em;
 }
 
 .container {
