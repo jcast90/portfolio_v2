@@ -22,7 +22,10 @@ li {
 
 a {
     cursor: pointer;
-    
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .hidden {
@@ -32,16 +35,32 @@ a {
 .background {
     width: 100%;
     height: 100vh;
-    background: url('../imgs/Jonathan-web-header-1.jpg') no-repeat center center;
-    background-size:cover;
+    background: url('../imgs/header_min1-min.jpg') no-repeat center center;
+    background-size: cover;
 }
-.intro{
-    font-size:3em;
-    position:relative;
-    display:block;
+
+.jumbotron span {
+    text-align: center;
+    display: block;
 }
-.name{
-    font-size:4em;
+
+#intro {
+    font-size: 1.56em;
+    margin-bottom: .25em;
+}
+
+#name {
+    margin: 0 auto;
+    font-size: 2.56em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid white;
+    width: 70%;
+}
+
+#desc {
+    font-size: 1.56em;
+    margin: 2em auto 0;
+    width: 70%;
 }
 
 .container {
@@ -72,12 +91,6 @@ a {
 .jumbotron {
     background-color: transparent;
     position: relative;
-}
-
-.message {
-    position: relative;
-    color: #D8E3EC;
- 
 }
 
 .arrow {
@@ -118,10 +131,13 @@ a {
 
 /* panels */
 
+.panel a:hover {
+    background-color: black !important;
+}
+
 .panel {
-    color: #BED1E0;
+    text-decoration: none;
     border-radius: 0 !important;
-    background-color: #657079 !important;
     border-bottom: solid 3px #97A8B5;
     margin-top: 0 !important;
 }
@@ -132,12 +148,39 @@ a {
 }
 
 .panel-title {
+    color: black;
     position: relative;
     top: 15vh;
 }
-.panel-body{
-    max-width:1200px;
-    margin:0 auto;
+
+.panel-heading:hover {
+    color: grey;
+}
+
+.panel-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #97A8B5;
+}
+
+.panel:nth-child(1) {
+    background: url('../imgs/testing_min.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.panel:nth-child(2) {
+    background: url('../imgs/map_min.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.panel:nth-child(3) {
+    background: url('../imgs/arcade_game_min.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.panel:nth-child(4) {
+    background: url('../imgs/web_opt_min.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 
@@ -211,6 +254,7 @@ pre {
 
 
 /*contact*/
+
 footer {
     text-align: center;
     padding: 5vh 0;
@@ -219,7 +263,6 @@ footer {
 
 footer h2 {
     font-size: 4vh;
-   
 }
 
 footer li {
@@ -228,17 +271,16 @@ footer li {
 
 .icon_group li {
     display: inline;
+    margin: 0 2em;
+}
 
-    margin:0 2em;
-  
+.icons::before {
+    font-size: 3em;
 }
-.icons::before{
-    font-size:3em;
-}
+
 .icon_group a {
-    color:transparent;
+    color: transparent;
     color: #BED1E0;
-    
 }
 
 
@@ -247,9 +289,6 @@ footer li {
 @media screen and (min-width:320px) {
     nav {
         display: none;
-    }
-    .jumbotron {
-        top: 20vh;
     }
     .message {
         font-size: 1.5em;
@@ -273,19 +312,43 @@ footer li {
         font-size: 2em;
     }
     nav {
-        display: none;
+        display: inline-block;
+        margin: 1em 0;
+    }
+    .nav li {
+        position: relative;
+        display: inline-block;
+        left: 2em;
+        margin: 2em .85em;
+    }
+    .nav li a {
+        background-color: transparent !important;
+        color: #002;
+    }
+    .nav li a:hover {
+        background-color: transparent !important;
+        text-decoration: underline;
+        color: #004;
     }
     .jumbotron {
-        top: 5vh;
+        top: -3vh;
+        font-size: .75em;
+    }
+    
+    #name {
+      
+        width: 90%;
+    }
+    #desc {
+        
+        width: 90%;
     }
     .arrow {
         font-size: 1.75em;
-        top: 18vh;
+        top: 12vh;
     }
     .logo {
-        display: block;
-        text-align: center;
-        font-size: 2em;
+        display: none;
     }
     .header_h2 h2 {
         padding-top: 40px;
@@ -293,7 +356,6 @@ footer li {
     .panel-heading {
         top: -1em;
     }
-   
 }
 
 @media screen and (min-width:550px) {
@@ -309,22 +371,37 @@ footer li {
     }
     .nav li a {
         background-color: transparent !important;
-        color: #D8E3EC;
+        color: #002;
     }
     .nav li a:hover {
         background-color: transparent !important;
         text-decoration: underline;
-        color: #BED1E0;
+        color: #004;
     }
     .jumbotron {
         top: 20vh;
+    }
+    #intro {
+        font-size: 2.56em;
+        margin-bottom: .25em;
+    }
+    #name {
+        margin: 0 auto;
+        font-size: 3.56em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid white;
+        width: 50%;
+    }
+    #desc {
+        font-size: 2.56em;
+        margin: 2em auto 0;
+        width: 70%;
     }
     .arrow {
         font-size: 2em;
         top: 40vh;
     }
     .logo {
-     
         display: inline;
         float: left;
         text-align: center;
@@ -344,13 +421,52 @@ footer li {
 
 @media screen and (min-width:700px) {
     .jumbotron {
-        top: 20vh;
+        top: 5vh;
     }
-    .message {
+     #intro {
+        font-size: 2.56em;
+        margin-bottom: .25em;
+    }
+    #name {
+        margin: 0 auto;
+        font-size: 3.56em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid white;
+        width: 70%;
+    }
+    #desc {
+        font-size: 2.56em;
+        margin: 2em auto 0;
+        width: 80%;
+    }
+   
+    .header_h2 h2 {
         font-size: 3em;
+        padding-top: 3em;
     }
-    .arrow {
-        top: 40vh;
+}
+
+@media screen and (min-width:1000px) {
+     .jumbotron:5vh;
+    }
+     #intro {
+        font-size: 3em;
+        margin-bottom: .25em;
+    }
+    #name {
+        margin: 0 auto;
+        font-size: 4.5em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid white;
+        width: 70%;
+    }
+    #desc {
+        font-size: 3em;
+        margin: 2em auto 0;
+        width: 90%;
+    }
+ .arrow {
+        top: 30vh;
         font-size: 2em;
     }
     .header_h2 h2 {
@@ -358,28 +474,13 @@ footer li {
         padding-top: 3em;
     }
 }
-@media screen and (min-width:1000px) {
-   
-    .jumbotron {
-        top: 20vh;
-    }
-    .message {
+
+@media screen and (min-width:1200px) {
+    #about_me h2 {
         font-size: 3em;
     }
-   
-    .header_h2 h2 {
-        font-size: 3em;
-        padding-top: 3em;
-    }
- 
-}
-@media screen and (min-width:1200px){
-       #about_me h2{
-        font-size:3em;
-       
-    }
-    #about_me article{
-        font-size:2em;
-        max-width:1200px;
+    #about_me article {
+        font-size: 2em;
+        max-width: 1200px;
     }
 }

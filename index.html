@@ -5,39 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Lancaster Portfolio</title>
-      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+ 
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-   <script async type="text/javascript" src="js/app.js"></script>
-       <script>
-    $(document).ready(function () {
-    $('span.hidden').fadeIn(4000).removeClass('hidden');
-    $(function () {
-        $('#arrow_down').effect('bounce', {
-            times: 10
-            , distance: 20
-        }, 2000);
-        $('#arrow_down').click(function () {
-            $('html,body').animate({
-                scrollTop: $(".header_h2").offset().top
-            }, 'slow');
-            // $('.nav').css('position','fixed');
-        });
-    });
-});
-    </script>
-        
+	
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <!--header with logo and nav-->
-       <!-- <img class="background" src= "/imgs/Jonathan-web-header-1.jpg" /> -->
-       <div class="background">
-        <div class="container">
-            <div class="row">
-                <div class="logo"> <span>Jonathan Lancaster</span> </div>
-                
+        <!-- <img class="background" src= "/imgs/Jonathan-web-header-1.jpg" /> -->
+        <div class="background">
+            <div class="container hidden">
+                <div class="row header">
+                    <div class="logo"> <span>Jonathan Lancaster</span> </div>
+
                     <nav class="nav navbar-fixed">
                         <ul>
                             <li> <a href="#accordion">projects</a></li>
@@ -46,19 +33,23 @@
                             <li><a href="pages/JonathanLancaster_Resume.pdf" target="_blank">resume</a></li>
                         </ul>
                     </nav>
+
+                </div>
+                <!-- end header-->
+                <!-- welcome message -->
                 
+                  <div class="jumbotron text-center">
+                   
+                        <span id="intro">Hello, my name is</span>
+                        <span id="name">Jonathan Lancaster</span>
+                        <span id="desc">I am a chef turned web developer. My pages feature web applications focused on functionality</span>
+                    </div>
+                
+                <div class="row">
+                    <div class="arrow hidden"> <span class="arrow_down fa fa-arrow-down" id="arrow_down"></span>
+                     </div>
+                </div>
             </div>
-            <!-- end header-->
-            <!-- welcome message -->
-            <div class="jumbotron text-center"> 
-             <span class="hidden intro">Hello, my name is</span>
-             <span class="hidden name">Jonathan Lancaster</span>
-             <span class="hidden desc">I am a chef turned web developer. My pages feature web applications focused on functionality</span>
-             </div>
-            <div class="row">
-                <div class="arrow"> <span class="arrow_down hidden fa fa-arrow-down" id="arrow_down"></span> </div>
-            </div>
-        </div>
         </div>
         <!--end message -->
         <!--div for text box-->
@@ -70,10 +61,10 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
                 <div class="panel-group" id="accordion">
                     <div class="panel">
-                        <div class="panel-heading">
-                            <h2 class="text-center panel-title" id="frt"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">RSS Feed Reader Tester</h2></a>
-                           
-                        </div>
+                        <a class="panel-target" data-toggle="collapse" data-parent="#accordion" href="#collapse1"><div class="panel-heading">
+                            <h2 class="text-center panel-title" id="frt">RSS Feed Reader Tester</h2>
+
+                        </div></a>
                         <div id="collapse1" class="panel-collapse collapse">
                             <div class="panel-body" id="feedtester">
                                 <div class="row">
@@ -93,95 +84,101 @@
                             </div>
                         </div>
                     </div>
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Neighborhood Map</h2></a>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h2>Case Study</h2> <span><em><a href="https://jcast90.github.io/neighborhood_map/" target="_blank">check out the site!</a></em></span> </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Challenge:</h3>
-                                    <p>The goal of this project was to create a single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map should be made to reflect your very own neighborhood. </p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Solution:</h3>
-                                    <p> Using JavaScript, I was able to have a functioning map with hard-coded locations and a search option. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Yelp API. This neighborhood map includes descriptions, ratings, and address information for the local businesses around my house in La Jolla. </p>
-                                    <button class="cursor alt" data-toggle="modal" data-target="#map">&lt;Code snippet&gt;</button> <span><em><a href="https://github.com/jcast90/neighborhood_map" target="_blank">Check out the full code!</a></em></span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Arcade Game Clone</h2></a>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h2>Case Study</h2><span><em><a href="https://jcast90.github.io/arcadeGame/" target="_blank">check out the site!</a></em></span> </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Challenge:</h3>
-                                    <p>After being given half of the HTML5 code for a partially developed game, I needed to create the rest of the game using Object Oriented JavaScript. Having only half of the code meant reading someone else’s code and modifying it to match my JavaScript. Not only that, but I had to add enemies, and have them collide with the player. </p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Solution</h3>
-                                    <p> The best solution was to start building the map, then the enemies and their functions and finally the main character and his functions. After going through different processes for how an enemy can affect the player, I went with a for loop and a math.random(). This allowed for a random number of enemies between a certain number to be generated. Ultimately, I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. </p>
-                                    <button class="cursor alt" data-toggle="modal" data-target="#game">&lt;Code snippet&gt;</button> <span><em><a href="https://github.com/jcast90/arcadeGame" target="_blank">Check out the full code!</a></em></span> </article>
+                    <div class="panel">
+                        <a class="panel-target" data-toggle="collapse" data-parent="#accordion" href="#collapse2"><div class="panel-heading">
+                            <h2 class="text-center panel-title">Neighborhood Map</h2>
+                        </div></a>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <h2>Case Study</h2> <span><em><a href="https://jcast90.github.io/neighborhood_map/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h3>Challenge:</h3>
+                                        <p>The goal of this project was to create a single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map should be made to reflect your very own neighborhood. </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h3>Solution:</h3>
+                                        <p> Using JavaScript, I was able to have a functioning map with hard-coded locations and a search option. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Yelp API. This neighborhood map includes descriptions, ratings, and address information for the local businesses around my house in La Jolla. </p>
+                                        <button class="cursor alt" data-toggle="modal" data-target="#map">&lt;Code snippet&gt;</button> <span><em><a href="https://github.com/jcast90/neighborhood_map" target="_blank">Check out the full code!</a></em></span> </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h2 class="text-center panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Website Optimization</a></h2> </div>
-                    <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h2>Case Study</h2><span class='padding'><em><a href="https://jcast90.github.io/website-opt/" target="_blank">check out the site!</a></em></span> </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Challenge:</h3>
-                                    <p>In this project, we were given a website that was slow, and had choppy animation and had a very high load time. The problem, was going into someone else code, understanding what they were doing, then take it apart and work with it so the page would load at an optimal speed and not have choppy frames in their animation. </p>
+                    <div class="panel">
+                        <a class="panel-target" data-toggle="collapse" data-parent="#accordion" href="#collapse3"><div class="panel-heading">
+                            <h2 class="text-center panel-title">Arcade Game Clone</h2>
+                        </div></a>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <h2>Case Study</h2><span><em><a href="https://jcast90.github.io/arcadeGame/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h3>Challenge:</h3>
+                                        <p>After being given half of the HTML5 code for a partially developed game, I needed to create the rest of the game using Object Oriented JavaScript. Having only half of the code meant reading someone else’s code and modifying it to match my JavaScript. Not only that, but I had to add enemies, and have them collide with the player. </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h3>Solution</h3>
+                                        <p> The best solution was to start building the map, then the enemies and their functions and finally the main character and his functions. After going through different processes for how an enemy can affect the player, I went with a for loop and a math.random(). This allowed for a random number of enemies between a certain number to be generated. Ultimately, I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. </p>
+                                        <button class="cursor alt" data-toggle="modal" data-target="#game">&lt;Code snippet&gt;</button> <span><em><a href="https://github.com/jcast90/arcadeGame" target="_blank">Check out the full code!</a></em></span> </article>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Solution:</h3>
-                                    <p> In order to increase the sites load time, the ‘googlefont’ was loaded into the HTML page with javascript, the css was moved to the end of the HTML document. The next step to solving the 60fps for the animation was to go through the javascript. First, I pulled out a function that was creating a new pizza with every for loop. Instead, it was created once, and another function was used to run through the container size and generate pizzas. Next, I limited the amount of pizzas that were being generated within the container. Finally, I went to the variable containing the pizza sizes and optimized them to be only the size that needed to be loaded. I optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. </p>
-                                    <button class="cursor alt" data-toggle="modal" data-target="#web_opt">&lt;Code snippet&gt;</button> <span><em><a href="https://github.com/jcast90/website-opt/tree/master/views" target="_blank">Check out the full code!</a></em></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <a class="panel-target" data-toggle="collapse" data-parent="#accordion" href="#collapse4"><div class="panel-heading">
+                            <h2 class="text-center panel-title">Website Optimization</h2> </div></a>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <h2>Case Study</h2><span class='padding'><em><a href="https://jcast90.github.io/website-opt/" target="_blank">check out the site!</a></em></span> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h3>Challenge:</h3>
+                                        <p>In this project, we were given a website that was slow, and had choppy animation and had a very high load time. The problem, was going into someone else code, understanding what they were doing, then take it apart and work with it so the page would load at an optimal speed and not have choppy frames in their animation. </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h3>Solution:</h3>
+                                        <p> In order to increase the sites load time, the ‘googlefont’ was loaded into the HTML page with javascript, the css was moved to the end of the HTML document. The next step to solving the 60fps for the animation was to go through the javascript. First, I pulled out a function that was creating a new pizza with every for loop. Instead, it was created once, and another function was used to run through the container size and generate pizzas. Next, I limited the amount of pizzas that were being generated within the container. Finally, I went to the variable containing the pizza sizes and optimized them to be only the size that needed to be loaded. I optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. </p>
+                                        <button class="cursor alt" data-toggle="modal" data-target="#web_opt">&lt;Code snippet&gt;</button> <span><em><a href="https://github.com/jcast90/website-opt/tree/master/views" target="_blank">Check out the full code!</a></em></span> </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="about_me">
-            <h2>About Me</h2>
-            <article> <span>My name is Jonathan Lancaster, my career started off in a small kitchen in Alabama. I worked my way over to California&#40;to a 5 diamond resort&#41;, however, I felt as though I needed a change of direction. Ever since high school I have been interested in design, coding, technology and have been an avid learner. A year ago I decided to officially make a change and learn to code. Finally, my portfolio is created, I have work to showcase my skills and I am always trying to learn new technologies, new programming languages and frameworks, and even new recipes in the kitchen. I am constantly working on personal projects, as well as, school projects.  My goal is to make it to an awesome design agency where we create award winning websites. With your help, I hope to achieve these goals, contribute to your team, and awards.</span></article>
-        </div>
-    </div>
-    <footer>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
-                <h2>Contact me</h2>
-                <ul>
-                    <li><a href="mailto:jcast90@me.com?Subject=Let's%20talk" target="_top">jcast90@me.com</a></li>
-                    <li>3227 Mercer Lane, San Diego, CA 92122</li>
-                    <ul class="icon_group">
-                        <li><a href="https://www.github.com/jcast90" target="_blank"> <span class="fa fa-github icons" aria-hidden="true"></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/jonathan-c-lancaster" target="_blank"><span class="fa fa-linkedin-square icons" aria-hidden="true"></span></a></li>
-                        <li><a href="mailto:jcast90@me.com?Subject=Let's%20talk" target="_top"><span class="fa fa-envelope icons" aria-hidden="true"></span></a></li>
-                    </ul>
-                </ul>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="about_me">
+                <h2>About Me</h2>
+                <article> <span>My name is Jonathan Lancaster, my career started off in a small kitchen in Alabama. I worked my way over to California&#40;to a 5 diamond resort&#41;, however, I felt as though I needed a change of direction. Ever since high school I have been interested in design, coding, technology and have been an avid learner. A year ago I decided to officially make a change and learn to code. Finally, my portfolio is created, I have work to showcase my skills and I am always trying to learn new technologies, new programming languages and frameworks, and even new recipes in the kitchen. I am constantly working on personal projects, as well as, school projects.  My goal is to make it to an awesome design agency where we create award winning websites. With your help, I hope to achieve these goals, contribute to your team, and awards.</span></article>
             </div>
         </div>
-    </footer>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
+                    <h2>Contact me</h2>
+                    <ul>
+                        <li><a href="mailto:jcast90@me.com?Subject=Let's%20talk" target="_top">jcast90@me.com</a></li>
+                        <li>3227 Mercer Lane, San Diego, CA 92122</li>
+                        <ul class="icon_group">
+                            <li>
+                                <a href="https://www.github.com/jcast90" target="_blank"> <span class="fa fa-github icons" aria-hidden="true"></span></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/jonathan-c-lancaster" target="_blank"><span class="fa fa-linkedin-square icons" aria-hidden="true"></span></a></li>
+                            <li><a href="mailto:jcast90@me.com?Subject=Let's%20talk" target="_top"><span class="fa fa-envelope icons" aria-hidden="true"></span></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    
+
+
     <div class="modal fade" id="ftr" tabindex="-1" role="dialog" aria-labelledby="ftr" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -327,12 +324,9 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </div>
-    
-   
-    <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script async src="js/jquery-ui.min.js"></script>
-    <script async src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script async type="text/javascript" src="js/app.js"></script>
+
+
+
 
 </body>
 

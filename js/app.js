@@ -1,10 +1,6 @@
 $(document).ready(function () {
-    $('span.hidden').fadeIn(4000).removeClass('hidden');
+    $('div.hidden').fadeIn(4000).removeClass('hidden');
     $(function () {
-        $('#arrow_down').effect('bounce', {
-            times: 10
-            , distance: 20
-        }, 2000);
         $('#arrow_down').click(function () {
             $('html,body').animate({
                 scrollTop: $(".header_h2").offset().top
@@ -12,4 +8,9 @@ $(document).ready(function () {
             // $('.nav').css('position','fixed');
         });
     });
+    $(function(){
+        $('.panel-title').click( function() {
+    $('html,body').animate({ scrollTop: $(this).offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 200);
+});
+    })
 });
